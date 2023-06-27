@@ -4,6 +4,7 @@
 @import url('./assets/css/categorias.css');
 @import url('./assets/css/produtos.css');
 @import url('./assets/css/facilidades.css');
+@import url('./assets/css/newsletter.css');
 
 :root {
    /* Colors */
@@ -81,6 +82,14 @@ body {
 
 .subtitle {
    font-size: var(--fs-3);
+}
+
+.btn {
+   font-size: 16px;
+   letter-spacing: 0.46px;
+   color: white;
+   background-color: var(--clr-purple);
+   border: none;
 }
 
 .container {

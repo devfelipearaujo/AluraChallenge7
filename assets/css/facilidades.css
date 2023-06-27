@@ -53,3 +53,17 @@
       max-width: 190px;
    }
 }
+
+@media screen and (max-width: 767px) {
+      .facilidades__container .facilidades__item:first-child img {
+         content: url(../img/Mobile/Ícones/x-diamond.png);
+      }
+
+      .facilidades__container .facilidades__item:nth-child(2) img {
+         content: url(../img/Mobile/Ícones/arrow-repeat.png);
+      }
+
+      .facilidades__container .facilidades__item:nth-child(3) img {
+         content: url(../img/Mobile/Ícones/flower1.png);
+      }
+}

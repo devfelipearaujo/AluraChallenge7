@@ -40,9 +40,6 @@
 
 .produtos__li-btn {
    margin-top: 13px;
-   color: white;
-   background-color: var(--clr-purple);
-   border: none;
    width: 102px;
    height: 37px;
 }
