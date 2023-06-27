@@ -64,13 +64,16 @@ a {
    box-sizing: border-box;
 }
 
+p {
+   line-height: 20px;
+}
+
 body {
    margin: 0 auto;
    font-family: var(--ff-primary);
 }
 
 .title {
-   font-size: var(--fs-5);
    font-weight: var(--fw-medium);
    padding: 42px 0 33px;
    text-align: center;

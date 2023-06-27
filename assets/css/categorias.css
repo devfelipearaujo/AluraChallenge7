@@ -4,6 +4,10 @@
    align-items: center;
 }
 
+.categorias__title {
+   font-size: var(--fs-5);
+}
+
 .categorias__ul {
    display: grid;
    grid-template-columns: repeat(6, 1fr);
@@ -24,6 +28,10 @@
 }
 
 @media screen and (max-width: 1439px) {
+   .categorias__title {
+      font-size: 28px;
+   }
+
    .categorias__ul {
       grid-template-columns: repeat(3, 1fr);
    }

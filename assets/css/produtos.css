@@ -4,6 +4,10 @@
    align-items: center;
 }
 
+.produtos__title {
+   font-size: var(--fs-5);
+}
+
 .produtos__ul {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -44,6 +48,10 @@
 }
 
 @media screen and (max-width: 1439px) {
+   .produtos__title {
+      font-size: 28px;
+   }
+
    .produtos__ul {
       grid-template-columns: repeat(2, 1fr);
    }
