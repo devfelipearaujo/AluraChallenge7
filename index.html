@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/img/Favicon-64px.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>Meteora Moda</title>
 </head>
 <body>
@@ -27,8 +28,65 @@
             <input class="header__input-submit" type="submit" value="Buscar">
         </form>
     </header>
+    <!-- Slider main container -->
+    <section class="swiper banner">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img class="swiper-img" src="./assets/img/Desktop/Banner carousel 1 _ 1440 (1).png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-box">
+                    <img class="swiper-img" src="./assets/img/Desktop/Banner carousel 2 _ 1440 (1).png" alt="">
+                    <div class="swiper-slide-text" id="swiper-slide-text">
+                        <p>Coleção Atemporal</p>
+                        <p>Estilo e qualidade para durar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide-box">
+                    <img class="swiper-img" src="./assets/img/Desktop/Banner carousel 3 _ 1440 (1).png" alt="">
+                    <div class="swiper-slide-text" id="swiper-slide-text">
+                        <p>Coleção Atemporal</p>
+                        <p>Alto impacto visual, baixo impacto ambiental!</p>
+                    </div>  
+                </div>                  
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination" id="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev" id="swiper-button-prev"><img src="./assets/img/arrow-left.png" alt=""></div>
+        <div class="swiper-button-next" id="swiper-button-next"><img src="./assets/img/arrow-right.png" alt=""></div>
     </section>
     <main>
     </main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+</script>
 </html>
