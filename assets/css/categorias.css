@@ -1,0 +1,84 @@
+.categorias {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.categorias__ul {
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   gap: 30px;
+}
+
+.categorias__li {
+   display: flex;
+   flex-direction: column;
+  } 
+
+
+.categorias__li h4 {
+   background-color: black;
+   text-align: center;
+   padding: 0.6rem 0;
+   color: white;
+}
+
+@media screen and (max-width: 1439px) {
+   .categorias__ul {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .categorias__ul li:first-child img {
+      content: url(../img/Tablet/Categorias/Categoria\ camiseta.png);
+   }
+
+   .categorias__ul li:nth-child(2) img {
+      content: url(../img/Tablet/Categorias/Categoria\ Bolsas.png);
+   }
+   
+   .categorias__ul li:nth-child(3) img {
+      content: url(../img/Tablet/Categorias/Categoria\ Calçados.png);
+   }
+   
+   .categorias__ul li:nth-child(4) img {
+      content: url(../img/Tablet/Categorias/Categoria\ calças.png);
+   }
+   
+   .categorias__ul li:nth-child(5) img {
+      content: url(../img/Tablet/Categorias/Categoria\ casacos.png);
+   }
+   
+   .categorias__ul li:nth-child(6) img {
+      content: url(../img/Tablet/Categorias/Categoria\ óculos.png);
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .categorias__ul {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .categorias__ul li:first-child img {
+      content: url(../img/Mobile/Categorias/Categoria\ camiseta.png);
+   }
+
+   .categorias__ul li:nth-child(2) img {
+      content: url(../img/Mobile/Categorias/Categoria\ Bolsas.png);
+   }
+   
+   .categorias__ul li:nth-child(3) img {
+      content: url(../img/Mobile/Categorias/Categoria\ Calçados.png);
+   }
+   
+   .categorias__ul li:nth-child(4) img {
+      content: url(../img/Mobile/Categorias/Categoria\ calças.png);
+   }
+   
+   .categorias__ul li:nth-child(5) img {
+      content: url(../img/Mobile/Categorias/Categoria\ casacos.png);
+   }
+   
+   .categorias__ul li:nth-child(6) img {
+      content: url(../img/Mobile/Categorias/Categoria\ óculos.png);
+   }
+}
