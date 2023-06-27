@@ -37,6 +37,41 @@
    font-weight: var(--fw-medium);
 }
 
+.newsletter__modal {
+   width: 700px;
+   border: none;
+   padding: 0;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35)
+}
+
+.newsletter__modal__title-container {
+   display: flex;
+   align-items: center;
+   background: var(--clr-black);
+   gap: 17px;
+   padding: 12px 22px 12px 12px;
+}
+
+.newsletter__modal__icon-check {
+   width: 32px;
+   height: 32px;
+   background: url(../img/icon-check.png);
+}
+
+.newsletter__modal__title {
+   color: var(--clr-white);
+   font-size: var(--fs-4);
+   flex: 1;
+}
+
+.newsletter__modal__icon-close:hover {
+   cursor: pointer;
+}
+
+.newsletter__modal__description {
+   padding: 16px 16px 32px 16px;
+}
+
 @media screen and (max-width: 1439px) {
    .newsletter {
       padding: 38px 0;
@@ -66,5 +101,13 @@
 
    .newsletter__input-text {
       max-width: 205px;
+   }
+
+   .newsletter__modal {
+      width: 343px;
+   }
+
+   .newsletter__modal__title-container {
+      padding: 9px 22px 9px 12px;
    }
 }

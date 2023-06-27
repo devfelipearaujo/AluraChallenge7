@@ -96,7 +96,7 @@
             <h2 class="produtos__title title">Produtos que estão bombando</h2>
             <ul class="produtos__ul">
                 <li class="produtos__li">
-                    <img class="produtos__li-img-1" src="./assets/img/Desktop/ImagensCards/Camiseta.png" alt="">   
+                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Camiseta.png" alt="">   
                     <div class="produtos__li-info">
                         <h3 class="produtos__li-title">Camiseta Conforto</h3>
                         <p class="produtos__li-description">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
@@ -178,20 +178,29 @@
             </div>
         </section>
         <section class="newsletter">
-            <form class="newsletter__form">
+            <form class="newsletter__form" id="newsletter__form">
                 <label class="newsletter__form-title" for="email">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? <span class="label-bold">Cadastre-se!</span>
                 </label>
                 <div class="newsletter__form-container">
                     <input class="newsletter__input-text" type="text" id="email" placeholder="Digite seu email">
-                    <input class="newsletter__input-submit btn" type="submit" value="Enviar">
+                    <input class="newsletter__input-submit btn" id="newsletter__submit" type="submit" value="Enviar">
                 </div>
             </form>
+                <dialog class="newsletter__modal" id="newsletter__modal">
+                    <div class="newsletter__modal__title-container">
+                        <div class="newsletter__modal__icon-check"></div>
+                        <h3 class="newsletter__modal__title">E-mail cadastrado com sucesso!</h3>
+                        <img class="newsletter__modal__icon-close" id="newsletter__modal__icon-close" src="./assets/img/icon-close.png" alt="">
+                    </div>
+                    <p class="newsletter__modal__description">Em breve você receberá novidades exclusivas da Meteora.</p>
+                </dialog>
         </section>
     </main>
     <footer class="footer">
         <p class="footer__text">2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
     </footer>
 </body>
+<script src="./assets/js/newsletter.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
