@@ -3,6 +3,7 @@
 @import url('./assets/css/swiper.css');
 @import url('./assets/css/categorias.css');
 @import url('./assets/css/produtos.css');
+@import url('./assets/css/facilidades.css');
 
 :root {
    /* Colors */
@@ -71,7 +72,8 @@ body {
 .title {
    font-size: var(--fs-5);
    font-weight: var(--fw-medium);
-   padding: 42px 0 33px 0;
+   padding: 42px 0 33px;
+   text-align: center;
 }
 
 .subtitle {

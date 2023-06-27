@@ -37,7 +37,7 @@
    }
    
    .categorias__ul li:nth-child(3) img {
-      content: url(../img/Tablet/Categorias/Categoria\ Calçados.png);
+      content: url(../img/Tablet/Categorias/Categoria\ calçados.png);
    }
    
    .categorias__ul li:nth-child(4) img {
@@ -67,7 +67,7 @@
    }
    
    .categorias__ul li:nth-child(3) img {
-      content: url(../img/Mobile/Categorias/Categoria\ Calçados.png);
+      content: url(../img/Mobile/Categorias/Categoria\ calçados.png);
    }
    
    .categorias__ul li:nth-child(4) img {
