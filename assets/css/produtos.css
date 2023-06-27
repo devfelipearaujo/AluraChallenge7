@@ -1,0 +1,110 @@
+.produtos {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.produtos__ul {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+}
+
+.produtos__li {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid gray;
+   width: 350px;
+}
+
+.produtos__li-info {
+   padding: 18px 15px;
+}
+
+.produtos__li-title {
+   font-weight: var(--fw-bold);
+}
+
+.produtos__li-description {
+   font-size: var(--fs-1);
+   margin: 24px 0;
+}
+
+.produtos__li-price {
+   font-weight: var(--fw-bold);
+}
+
+.produtos__li-btn {
+   margin-top: 13px;
+   color: white;
+   background-color: var(--clr-purple);
+   border: none;
+   width: 102px;
+   height: 37px;
+}
+
+@media screen and (max-width: 1439px) {
+   .produtos__ul {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .produtos__li {
+      width: 330px;
+   }
+
+   .produtos li:first-child img {
+      content: url(../img/Tablet/ImagensCards/camiseta.png);
+   }
+
+   .produtos li:nth-child(2) img {
+      content: url(../img/Tablet/ImagensCards/calça.png);
+   }
+   .produtos li:nth-child(3) img {
+      content: url(../img/Tablet/ImagensCards/tenis.png);
+   }
+   .produtos li:nth-child(4) img {
+      content: url(../img/Tablet/ImagensCards/jaqueta\ jeans.png);
+   }
+   .produtos li:nth-child(5) img {
+      content: url(../img/Tablet/ImagensCards/óculos.png);
+   }
+   .produtos li:nth-child(6) img {
+      content: url(../img/Tablet/ImagensCards/bolsa.png);
+   }
+
+   .produtos li:nth-child(2) .produtos__li-description {
+      margin-bottom: 37px;
+   }
+
+}
+
+
+@media screen and (max-width: 767px) {
+   .produtos__ul {
+      grid-template-columns: 1fr;
+   }
+
+   .produtos__li {
+      width: 323px;
+   }
+
+   .produtos li:first-child img {
+      content: url(../img/Mobile/ImagensCards/Card\ camiseta.png);
+   }
+
+   .produtos li:nth-child(2) img {
+      content: url(../img/Mobile/ImagensCards/Card\ calça.png);
+   }
+   .produtos li:nth-child(3) img {
+      content: url(../img/Mobile/ImagensCards/Card\ tenis.png);
+   }
+   .produtos li:nth-child(4) img {
+      content: url(../img/Mobile/ImagensCards/Card\ jaqueta\ jeans.png);
+   }
+   .produtos li:nth-child(5) img {
+      content: url(../img/Mobile/ImagensCards/Card\ óculos.png);
+   }
+   .produtos li:nth-child(6) img {
+      content: url(../img/Mobile/ImagensCards/Card\ bolsa.png);
+   }
+}

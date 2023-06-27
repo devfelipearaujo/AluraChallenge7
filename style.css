@@ -2,6 +2,7 @@
 @import url('./assets/css/header.css');
 @import url('./assets/css/swiper.css');
 @import url('./assets/css/categorias.css');
+@import url('./assets/css/produtos.css');
 
 :root {
    /* Colors */
@@ -20,7 +21,7 @@
    /* Font-sizes */
    --fs-1: 13px;
    --fs-2: 15px;
-   --fs-3: 16px;
+   --fs-3: clamp(0.8125rem, 1.1112vw, 1.12rem); /* 13px to 17.92px */
    --fs-4: 20px;
    --fs-5: 32px;
    --fs-6: 48px;
