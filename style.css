@@ -3,6 +3,7 @@
 @import url('./assets/css/swiper.css');
 @import url('./assets/css/categorias.css');
 @import url('./assets/css/produtos.css');
+@import url('./assets/css/produtos-modal.css');
 @import url('./assets/css/facilidades.css');
 @import url('./assets/css/newsletter.css');
 @import url('./assets/css/footer.css');
@@ -10,10 +11,12 @@
 :root {
    /* Colors */
    --clr-white: #FFFFFF;
+   --clr-off-white: #DEE2E6;
    --clr-black: #000000;
    --clr-gray: #CCCCCC;
    --clr-green: #DAFF01;
    --clr-purple: #9353FF;
+   --clr-blue: #75D7F0;
 
    --clr-coral: #EE6471;
    --clr-orange: #F87F46;
