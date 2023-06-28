@@ -63,6 +63,14 @@
 }
 
 
+@media screen and (min-width: 1440px) {
+   .header__nav-link:hover {
+      border-bottom: 1px solid white;
+      padding-bottom: 3px;
+      transition: 0.25s;
+   }
+}
+
 @media screen and (max-width: 1439px) {
    .logo {
       content: url(../img/Tablet/Logo\ tablet.png);

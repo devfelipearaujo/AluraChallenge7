@@ -28,6 +28,15 @@
    color: white;
 }
 
+@media screen and (min-width: 1440px) {
+   .categorias__li:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+      transition: 0.25s;
+   }
+}
+
 @media screen and (max-width: 1439px) {
    .categorias__title {
       font-size: 28px;
