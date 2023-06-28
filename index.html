@@ -14,13 +14,13 @@
         <div class="header__container">
             <a href="" class="logo__link"><img class="logo" src="./assets/img/Desktop/Logo desktop.png" alt=""></a>
                 <nav class="header__nav">
-                    <ul class="header__nav-ul">
-                        <li><a class="header__nav-link" href="">Home</a></li>
+                    <ul class="header__nav-ul" id="header__nav-ul">
+                        <li><a class="header__nav-link header__nav-link-active" href="">Home</a></li>
                         <li><a class="header__nav-link" href="">Nossas Lojas</a></li>
                         <li><a class="header__nav-link" href="">Novidades</a></li>
                         <li><a class="header__nav-link" href="">Promoções</a></li>
                     </ul>
-                    <img class="menu__hamburger" src="./assets/img/Mobile/Ícones/icon-menu.png" alt="">
+                    <img id="menu__hamburger" class="menu__hamburger" src="./assets/img/Mobile/Ícones/icon-menu.png" alt="">
                 </nav>
         </div>
         <form class="searchbar">
@@ -71,23 +71,23 @@
                     <h4>Camisetas</h4>
                 </li>
                 <li class="categorias__li">
-                    <img src="./assets/img/Desktop/Categorias/Categoria Bolsa.png" alt="">
+                    <img src="./assets/img/Desktop/Categorias/Categoria Bolsa.png" alt="Bolsa">
                     <h4>Bolsas</h4>
                 </li>
                 <li class="categorias__li">
-                    <img src="./assets/img/Desktop/Categorias/Categoria Calçados.png" alt="">
+                    <img src="./assets/img/Desktop/Categorias/Categoria Calçados.png" alt="Calçados">
                     <h4>Calçados</h4>
                 </li>
                 <li class="categorias__li">
-                    <img src="./assets/img/Desktop/Categorias/Categoria calça.png" alt="">
+                    <img src="./assets/img/Desktop/Categorias/Categoria calça.png" alt="Calças">
                     <h4>Calças</h4>
                 </li>
                 <li class="categorias__li">
-                    <img src="./assets/img/Desktop/Categorias/Categoria casacos.png" alt="">
+                    <img src="./assets/img/Desktop/Categorias/Categoria casacos.png" alt="Casacos">
                     <h4>Casacos</h4>
                 </li>
                 <li class="categorias__li">
-                    <img src="./assets/img/Desktop/Categorias/Categoria óculos.png" alt="">
+                    <img src="./assets/img/Desktop/Categorias/Categoria óculos.png" alt="Óculos">
                     <h4>Óculos</h4>
                 </li>
             </ul>
@@ -96,7 +96,7 @@
             <h2 class="produtos__title title">Produtos que estão bombando</h2>
             <ul class="produtos__ul">
                 <li class="produtos__li">
-                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Camiseta.png" alt="">   
+                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Camiseta.png" alt="Camiseta">   
                     <div class="produtos__li-info">
                         <h3 class="produtos__li-title">Camiseta Conforto</h3>
                         <p class="produtos__li-description">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
@@ -105,7 +105,7 @@
                     </div>
                 </li>
                 <li class="produtos__li">
-                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Calça.png" alt="">
+                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Calça.png" alt="Calça">
                     <div class="produtos__li-info">
                         <h3 class="produtos__li-title">Calça Alfaiateria</h3>
                         <p class="produtos__li-description">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
@@ -114,7 +114,7 @@
                     </div>
                 </li>
                 <li class="produtos__li">
-                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Tenis.png" alt="">
+                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Tenis.png" alt="Tênis">
                     <div class="produtos__li-info">
                         <h3 class="produtos__li-title">Tênis Chunky</h3>
                         <p class="produtos__li-description">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
@@ -123,7 +123,7 @@
                     </div>
                 </li>
                 <li class="produtos__li">
-                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Jaqueta.png" alt="">
+                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Jaqueta.png" alt="Jaqueta">
                     <div class="produtos__li-info">
                         <h3 class="produtos__li-title">Jaqueta Jeans</h3>
                         <p class="produtos__li-description">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
@@ -132,7 +132,7 @@
                     </div>
                 </li>
                 <li class="produtos__li">
-                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/óculos.png" alt="">
+                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/óculos.png" alt="Óculos">
                     <div class="produtos__li-info">
                         <h3 class="produtos__li-title">Óculos Redondo</h3>
                         <p class="produtos__li-description">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
@@ -141,7 +141,7 @@
                     </div>
                 </li>
                 <li class="produtos__li">
-                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Bolsa.png" alt="">
+                    <img class="produtos__li-img" src="./assets/img/Desktop/ImagensCards/Bolsa.png" alt="Bolsa">
                     <div class="produtos__li-info">
                         <h3 class="produtos__li-title">Bolsa coringa</h3>
                         <p class="produtos__li-description">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
@@ -244,7 +244,7 @@
                 <label class="newsletter__form-title" for="email">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? <span class="label-bold">Cadastre-se!</span>
                 </label>
                 <div class="newsletter__form-container">
-                    <input class="newsletter__input-text" type="text" id="email" placeholder="Digite seu email">
+                    <input class="newsletter__input-text" type="email" id="email" placeholder="Digite seu email">
                     <input class="newsletter__input-submit btn" id="newsletter__submit" type="submit" value="Enviar">
                 </div>
             </form>
@@ -262,6 +262,7 @@
         <p class="footer__text">2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
     </footer>
 </body>
+<script src="./assets/js/menu.js"></script>
 <script src="./assets/js/produtos-modal.js"></script>
 <script src="./assets/js/newsletter-modal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

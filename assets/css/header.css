@@ -20,6 +20,14 @@
    display: none;
 }
 
+.menu__hamburger-active {
+   content: url(../img/icon-close-green.png);
+   position: absolute;
+   z-index: 100;
+   top: 13px;
+   right: 21px;
+}
+
 .header__nav {
    display: flex;
    align-items: center;
@@ -113,6 +121,35 @@
 
    .header__nav-ul {
       display: none;
+   }
+
+   .header__nav-ul-mobile {
+      display: flex;
+      flex-direction: column;
+      background: #343A40;
+      width: 144px;
+      padding: 42px 21px 19px 23px;
+      position: absolute;
+      z-index: 10;
+      top: 0%;
+      right: 0%;    
+   }
+
+   .header__nav-link {
+      font-size: 16px;
+      border-bottom: 1px solid white;
+      padding-bottom: 15px;
+      display: block;
+      width: 100%;
+   }
+
+   .header__nav-ul li:last-child .header__nav-link {
+      border-bottom: none;
+      padding-bottom: 0;
+}
+
+   .header__nav-link-active {
+      color: var(--clr-green);
    }
 
    .menu__hamburger {
