@@ -20,18 +20,21 @@ produtosModalCloseIcon.addEventListener("click", (evento)=>{
 var modalTitle = document.querySelector('#produtos__modal-title');
 var modalDescription = document.querySelector('#produtos__modal-description');
 var modalPrice = document.querySelector('#produtos__modal-price');
+var modalImg = document.querySelector('#produtos__modal-img')
 
 verMaisBtn.forEach((arrayElement)=>{
    arrayElement.addEventListener("click", (evento)=>{
-      changeProduct(evento.target.parentNode.children[0].textContent, evento.target.parentNode.children[1].textContent, evento.target.parentNode.children[2].textContent)
+      changeProduct(evento.target.parentNode.children[0].textContent, evento.target.parentNode.children[1].textContent, evento.target.parentNode.children[2].textContent, evento.target.parentNode.parentNode.children[0].attributes.src.value)
+      console.log(evento.target.parentNode.parentNode.children[0].attributes.src)
    })
 })
 
-function changeProduct(title, description, price) {
-   console.log(title);
+function changeProduct(title, description, price, img) {
    modalTitle.textContent = title;
    modalDescription.textContent = description;
    modalPrice.textContent = price;
+   modalImg.src = img;
+   console.log(img)
 }
 
 /* ----- Preventing default function of form's submit button ----- */
